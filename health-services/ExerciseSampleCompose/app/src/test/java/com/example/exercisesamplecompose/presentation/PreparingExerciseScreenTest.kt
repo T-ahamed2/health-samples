@@ -47,14 +47,13 @@ class PreparingExerciseScreenTest(
         }_${device.id}$suffix.png"
 
     @Composable
-   override fun TestScaffold(content: @Composable () -> Unit) {
+    override fun TestScaffold(content: @Composable () -> Unit) {
         CorrectLayout {
             AppScaffold(timeText = {}) {
                 content()
             }
         }
     }
-
 
     @Test
     fun preparing() =
